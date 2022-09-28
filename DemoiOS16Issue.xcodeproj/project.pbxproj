@@ -11,6 +11,7 @@
 		E661018928E37F860082FC79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E661018828E37F860082FC79 /* ContentView.swift */; };
 		E661018B28E37F880082FC79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E661018A28E37F880082FC79 /* Assets.xcassets */; };
 		E661018E28E37F880082FC79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E661018D28E37F880082FC79 /* Preview Assets.xcassets */; };
+		E661019928E37FE10082FC79 /* LNPopupUI-Static in Frameworks */ = {isa = PBXBuildFile; productRef = E661019828E37FE10082FC79 /* LNPopupUI-Static */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E661019928E37FE10082FC79 /* LNPopupUI-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = DemoiOS16Issue;
+			packageProductDependencies = (
+				E661019828E37FE10082FC79 /* LNPopupUI-Static */,
+			);
 			productName = DemoiOS16Issue;
 			productReference = E661018328E37F860082FC79 /* DemoiOS16Issue.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = E661017A28E37F860082FC79;
+			packageReferences = (
+				E661019728E37FE10082FC79 /* XCRemoteSwiftPackageReference "LNPopupUI" */,
+			);
 			productRefGroup = E661018428E37F860082FC79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E661019728E37FE10082FC79 /* XCRemoteSwiftPackageReference "LNPopupUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LeoNatan/LNPopupUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E661019828E37FE10082FC79 /* LNPopupUI-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E661019728E37FE10082FC79 /* XCRemoteSwiftPackageReference "LNPopupUI" */;
+			productName = "LNPopupUI-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E661017B28E37F860082FC79 /* Project object */;
 }

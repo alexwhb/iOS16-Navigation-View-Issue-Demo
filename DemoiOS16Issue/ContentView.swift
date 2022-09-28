@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  DemoiOS16Issue
 //
-//  Created by Alexander Black on 9/27/22.
 //
 
 import SwiftUI
